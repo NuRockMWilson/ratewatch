@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  /* NuRock Brand */
+  --nr-navy:       #164576;
+  --nr-navy-dark:  #0e2f52;
+  --nr-navy-light: #1d5a9a;
+  --nr-tan:        #B4AE92;
+  --nr-tan-light:  #cdc8b0;
+  --nr-tan-dark:   #8f8a72;
+
+  /* Neutrals */
+  --nr-black:      #101828;
+  --nr-slate:      #475467;
+  --nr-gray:       #F4F4F4;
+  --nr-offwhite:   #F2F2F2;
+
+  /* Semantic */
+  --up:            #15803d;
+  --up-bg:         #f0fdf4;
+  --down:          #b91c1c;
+  --down-bg:       #fef2f2;
+  --neutral:       #475467;
+  --neutral-bg:    #F4F4F4;
+
+  /* Surfaces */
+  --surface:       #ffffff;
+  --surface-2:     #F2F2F2;
+  --surface-3:     #e8e8e8;
+  --border:        rgba(22, 69, 118, 0.12);
+  --border-strong: rgba(22, 69, 118, 0.22);
+
+  /* Text */
+  --text-1:        #101828;
+  --text-2:        #475467;
+  --text-3:        #8f8a72;
+
+  /* Fonts */
+  --font-display:  'Oswald', ui-sans-serif, sans-serif;
+  --font-body:     'Inter', ui-sans-serif, sans-serif;
+  --font-mono:     'IBM Plex Mono', ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-font-smoothing: antialiased; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--surface-2);
+  color: var(--text-1);
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--nr-tan); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--nr-tan-dark); }
